@@ -3,7 +3,6 @@ import Ticket from "../Ticket/Ticket";
 
 const FilteredTickets = (props) => {
   const unsortedTickets = props.unsortedTickets;
-  const sortCriterion = props.sortCriterion;
   const [filteredTickets, setFilteredTickets] = useState([]);
   const routeSwitches = props.routeSwitches;
   const findCheapestTickets = () => {
@@ -51,7 +50,7 @@ const FilteredTickets = (props) => {
     } else {
       checkSortCryterion();
     }
-  }, [unsortedTickets, sortCriterion, setFilteredTickets, routeSwitches]);
+  });
 
   return (
     <>
