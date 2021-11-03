@@ -67,7 +67,7 @@ const RouteSwitches = (props) => {
                   checked={currentSwitches.includes(item)}
                   type={"checkbox"}
                 ></input>
-                <div class="control_indicator"></div>
+                <div class="control__indicator"></div>
                 <span>{item}</span>
               </label>
             </div>

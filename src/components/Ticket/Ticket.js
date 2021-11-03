@@ -48,17 +48,17 @@ const Ticket = (props) => {
           ></img>
         </div>
         <div className="ticket__trip">
-          <ul className="trip__schedule">
-            <span className="trip__routes">
+          <ul className="ticket__trip__schedule">
+            <span className="ticket__trip__routes">
               {data.segments[0].origin}-{data.segments[0].destination}
             </span>
-            <span className="trip__date">{travelDepartureTime(0)}</span>
-            <span className="ticket__routes">
+            <span className="ticket__trip__date">{travelDepartureTime(0)}</span>
+            <span className="ticket__ticket__routes">
               {data.segments[1].origin}-{data.segments[1].destination}
             </span>
-            <span className="trip__date">{travelDepartureTime(1)}</span>
+            <span className="ticket__trip__date">{travelDepartureTime(1)}</span>
           </ul>
-          <ul className="trip__duration">
+          <ul className="ticket__trip__duration">
             <span>в пути</span>
             <span>
               {travelTimeHours(0)}ч {travelTimeMinutes(0)}м
@@ -68,17 +68,17 @@ const Ticket = (props) => {
               {travelTimeHours(1)}ч {travelTimeMinutes(1)}м
             </span>
           </ul>
-          <ul className="trip__stops">
-            <span className="trip__stops__count">
+          <ul className="ticket__trip__stops">
+            <span className="ticket__trip__stops__count">
               {stops(0).length} {switchRoute(stops(0))}
             </span>
-            <span className="trip__stops__routes">
+            <span className="ticket__trip__stops__routes">
               {stops(0).join().replace(",", ", ")}
             </span>
-            <span className="trip__stops__count">
+            <span className="ticket__trip__stops__count">
               {stops(1).length} {switchRoute(stops(1))}{" "}
             </span>
-            <span className="trip__stops__routes">
+            <span className="ticket__trip__stops__routes">
               {stops(1).join().replace(",", ", ")}
             </span>
           </ul>

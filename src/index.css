@@ -167,11 +167,11 @@ code {
   padding-right: 92px;
 }
 
-.trip__stops {
+.ticket__trip__stops {
   padding-right: 0px;
 }
 
-.trip__duration :nth-child(4), .trip__duration :nth-child(2) {
+.ticket__trip__duration :nth-child(4), .trip__duration :nth-child(2) {
   text-transform: none;
 }
 
