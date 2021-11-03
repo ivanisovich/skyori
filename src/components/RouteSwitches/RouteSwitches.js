@@ -46,19 +46,21 @@ const RouteSwitches = (props) => {
     <>
       <form onSubmit={handleSubmit} className={"route__switches"}>
         <span className={"route__switches__title"}>количество пересадок</span>
-        <label class="control control-checkbox">
-          <input
-            checked={currentSwitches.length === 4 ? true : false}
-            onChange={handleSetAll}
-            type={"checkbox"}
-          ></input>
-          <div class="control_indicator"></div>
-          <span>Все</span>
-        </label>
+        <div className="route__switches__checkbox">
+          <label class="control control-checkbox">
+            <input
+              checked={currentSwitches.length === 4 ? true : false}
+              onChange={handleSetAll}
+              type={"checkbox"}
+            ></input>
+            <div class="control_indicator"></div>
+            <span>Все</span>
+          </label>
+        </div>
 
         {switches.map((item, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="route__switches__checkbox">
               <label class="control control-checkbox">
                 <input
                   onChange={handleChange}
