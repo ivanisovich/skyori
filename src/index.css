@@ -42,7 +42,7 @@ code {
 }
 
 .route__switches div {
-  line-height: 20px;
+  line-height: 35px;
   white-space: nowrap;
   text-align: left;
 }
@@ -58,7 +58,14 @@ code {
 }
 
 .control-checkbox {
-  margin-top: 12px;
+  margin-top: 6.5px;
+}
+
+.route__switches .route__switches__checkbox:hover {
+  width: 126%;
+  margin-left: -20px;
+  padding-left: 20px;
+  background-color: #F1FCFF;
 }
 
 .control-checkbox span {
@@ -69,7 +76,7 @@ code {
 
 .route__switches label {
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 .filter {
@@ -195,28 +202,22 @@ code {
   .header__logo {
     margin-left: 0px;
   }
-
   .route__switches {
     margin: 10px;
   }
-
   .filter {
     margin-left: -35px;
   }
-
   .filtered__tickets__wrapper {
     display: unset;
   }
-
   .ticket__trip ul {
     padding-right: 12px;
   }
-
   .filtered__tickets {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
   .ticket {
     margin-left: auto;
     margin-right: auto;
