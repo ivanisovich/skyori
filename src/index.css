@@ -38,6 +38,7 @@ code {
   padding-right: 44px;
   border-radius: 5px;
   background-color: #fff;
+  padding-bottom:13px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,7 +63,7 @@ code {
 }
 
 .route__switches .route__switches__checkbox:hover {
-  width: 126%;
+  width: 127.5%;
   margin-left: -20px;
   padding-left: 20px;
   background-color: #F1FCFF;
@@ -76,7 +77,7 @@ code {
 
 .route__switches label {
   text-align: left;
-  margin-bottom: 0px;
+  margin-bottom: 6px;
 }
 
 .filter {
@@ -199,6 +200,12 @@ code {
 }
 
 @media (max-width: 800px) {
+  .route__switches .route__switches__checkbox:hover {
+    width: 110%;
+    margin-left: -20px;
+    padding-left: 20px;
+    background-color: #F1FCFF;
+  }
   .header__logo {
     margin-left: 0px;
   }
