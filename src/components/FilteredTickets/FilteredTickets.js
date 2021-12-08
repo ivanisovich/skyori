@@ -54,7 +54,7 @@ const FilteredTickets = (props) => {
 
   return (
     <>
-      <ul className="filtered__tickets">
+      <ul className="filtered-tickets">
         {filteredTickets.map((item, index) => {
           return <Ticket data={item} key={index}></Ticket>;
         })}

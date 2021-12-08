@@ -32,11 +32,11 @@ const App = () => {
 
   return (
     <>
-      <div className="header__logo">
+      <div className="header">
         <img src={Logo} alt={"skyori logo"}></img>
       </div>
 
-      <div className="filtered__tickets__wrapper">
+      <div className="filtered-tickets__wrapper">
         <RouteSwitches
           routeSwitches={routeSwitches}
           setSwitches={setCurrentRouteSwitches}

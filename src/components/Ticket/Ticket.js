@@ -48,17 +48,17 @@ const Ticket = (props) => {
           ></img>
         </div>
         <div className="ticket__trip">
-          <ul className="ticket__trip__schedule">
-            <span className="ticket__trip__routes">
+          <ul className="ticket__trip-chedule">
+            <span className="ticket__trip-routes">
               {data.segments[0].origin}-{data.segments[0].destination}
             </span>
-            <span className="ticket__trip__date">{travelDepartureTime(0)}</span>
-            <span className="ticket__ticket__routes">
+            <span className="ticket__trip-date">{travelDepartureTime(0)}</span>
+            <span className="ticket__ticket-routes">
               {data.segments[1].origin}-{data.segments[1].destination}
             </span>
-            <span className="ticket__trip__date">{travelDepartureTime(1)}</span>
+            <span className="ticket__trip-date">{travelDepartureTime(1)}</span>
           </ul>
-          <ul className="ticket__trip__duration">
+          <ul className="ticket__trip-duration">
             <span>в пути</span>
             <span>
               {travelTimeHours(0)}ч {travelTimeMinutes(0)}м
@@ -68,17 +68,17 @@ const Ticket = (props) => {
               {travelTimeHours(1)}ч {travelTimeMinutes(1)}м
             </span>
           </ul>
-          <ul className="ticket__trip__stops">
-            <span className="ticket__trip__stops__count">
+          <ul className="ticket__trip-stops">
+            <span className="ticket__trip-stops__count">
               {stops(0).length} {switchRoute(stops(0))}
             </span>
-            <span className="ticket__trip__stops__routes">
+            <span className="ticket__trip-stops__routes">
               {stops(0).join().replace(",", ", ")}
             </span>
-            <span className="ticket__trip__stops__count">
+            <span className="ticket__trip-stops__count">
               {stops(1).length} {switchRoute(stops(1))}{" "}
             </span>
-            <span className="ticket__trip__stops__routes">
+            <span className="ticket__trip-stops__routes">
               {stops(1).join().replace(",", ", ")}
             </span>
           </ul>

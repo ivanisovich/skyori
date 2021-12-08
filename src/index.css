@@ -1,5 +1,6 @@
 @import url("./components/RouteSwitches/customCheckbox.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -18,11 +19,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.header__logo {
+.header {
   padding-top: 40px;
 }
 
-.filtered__tickets__wrapper {
+.filtered-tickets__wrapper {
   display: flex;
   justify-content: center;
   padding-top: 26px;
@@ -30,7 +31,7 @@ code {
   padding-right: 9.2vw;
 }
 
-.route__switches {
+.route-switches {
   display: block;
   height: 220px;
   padding: 15px;
@@ -38,17 +39,22 @@ code {
   padding-right: 44px;
   border-radius: 5px;
   background-color: #fff;
-  padding-bottom:13px;
+  padding-bottom: 23px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.route__switches div {
+.route-switches__checkbox {
+  width: 126%;
+}
+
+
+.route-switches div {
   line-height: 35px;
   white-space: nowrap;
   text-align: left;
 }
 
-.route__switches__title {
+.route-switches__title {
   font-size: 12px;
   line-height: 12px;
   white-space: nowrap;
@@ -62,8 +68,7 @@ code {
   margin-top: 6.5px;
 }
 
-.route__switches .route__switches__checkbox:hover {
-  width: 127.5%;
+.route-switches__checkbox:hover {
   margin-left: -20px;
   padding-left: 20px;
   background-color: #F1FCFF;
@@ -75,7 +80,7 @@ code {
   font-size: 13px;
 }
 
-.route__switches label {
+.route-switches label {
   text-align: left;
   margin-bottom: 6px;
 }
@@ -87,7 +92,7 @@ code {
   padding-left: 19px;
 }
 
-.filtered__tickets {
+.filtered-tickets {
   padding-left: 20px;
   padding-top: 3px;
 }
@@ -167,11 +172,11 @@ code {
   padding-right: 92px;
 }
 
-.ticket__trip__stops {
+.ticket__trip-stops {
   padding-right: 0px;
 }
 
-.ticket__trip__duration :nth-child(4), .trip__duration :nth-child(2) {
+.ticket__trip-duration :nth-child(4), .ticket__trip-duration :nth-child(2) {
   text-transform: none;
 }
 
@@ -194,37 +199,47 @@ code {
   margin-bottom: 13px;
 }
 
-.ticket .trip__stops__count {
+.trip__stops-count {
   width: 100%;
   padding-left: 6px;
 }
 
 @media (max-width: 800px) {
-  .route__switches .route__switches__checkbox:hover {
-    width: 110%;
+  .route-switches__checkbox {
+    width: calc(100vw - 58px);
+  }
+
+  .route-switches__checkbox:hover {
     margin-left: -20px;
     padding-left: 20px;
     background-color: #F1FCFF;
   }
-  .header__logo {
+
+  .header {
     margin-left: 0px;
   }
-  .route__switches {
+
+  .route-switches {
     margin: 10px;
   }
+
   .filter {
     margin-left: -35px;
   }
-  .filtered__tickets__wrapper {
+
+  .filtered-tickets__wrapper {
     display: unset;
   }
+
   .ticket__trip ul {
     padding-right: 12px;
   }
-  .filtered__tickets {
+
+  .filtered-tickets {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .ticket {
     margin-left: auto;
     margin-right: auto;
